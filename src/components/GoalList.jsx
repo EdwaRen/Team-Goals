@@ -3,6 +3,8 @@ import { connect} from 'react-redux';
 import {goalRef} from '../firebase';
 import { setGoals} from '../actions';
 import GoalItem from './GoalItem';
+import * as firebase from 'firebase';
+
 
 class GoalList extends Component {
   componentDidMount() {
@@ -14,14 +16,17 @@ class GoalList extends Component {
         const serverKey = goal.key;
         goals.push({email, title, serverKey , date});
       })
-      console.log('goals', goals);
+      // console.log('goals', goals);
       this.props.setGoals(goals);
     })
 
   }
 
   render() {
-    console.log("this.props.goals", this.props.goals);
+    // var fb = new Firebase(URL);
+
+// listen for all changes and update
+    // console.log("this.props.goals", this.props.goals);
     return (
       <div>{
         this.props.goals.map((goal, index) => {

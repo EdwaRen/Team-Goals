@@ -1,13 +1,20 @@
-import React, { Component} from 'react';
+import React, { Component, PropTypes} from 'react';
 import { connect} from 'react-redux';
 import { setCompleted} from '../actions';
 import { completeGoalRef} from '../firebase';
-import moment from 'moment';
+// import moment from 'moment';
+import * as firebase from 'firebase';
+// import ReactMixin from 'react-mixin';
+// import ReactFireMixin from 'reactfire';
+
 
 
 class CompleteGoalList extends Component {
+
+
+
   componentDidMount() {
-    completeGoalRef.on('value', snap => {
+    completeGoalRef.orderByChild("date").on('value', snap => {
       let completeGoals = [];
       snap.forEach(completeGoal => {
         const {email, title, date } = completeGoal.val();
@@ -25,8 +32,12 @@ class CompleteGoalList extends Component {
 
 
   render() {
-    console.log('this.props', this.props.completeGoals);
-    var myDate = moment(new Date()).utcOffset(-240).format('YYYY-MM-DD HH:mm');
+    // completeGoal.endAt().limit(100).on('value', update);
+
+    // console.log('this.props', this.props.completeGoals);
+    // var myDate = moment(new Date()).utcOffset(-240).format('YYYY-MM-DD HH:mm');
+
+
 
     return (
       <div>
