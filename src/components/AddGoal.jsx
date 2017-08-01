@@ -26,11 +26,16 @@ class AddGoal extends Component {
     document.getElementById("inputField").value = "";
   }
 
+  handleKeyPress = (event) => {
+  if(event.key == 'Enter'){
+    this.addGoal();
+    }
+}
 
   render() {
 
     var dates = new Date().getTime();
-    console.log(dates);
+    // console.log(dates);
 
     return (
 
@@ -46,6 +51,7 @@ class AddGoal extends Component {
             className = "form-control"
             style={{marginRight: '5px', textAlign: "left", width:"500px"}}
             onChange={event => this.setState({title:event.target.value, date: -dates})}
+            onKeyPress={this.handleKeyPress}
           />
           <button
             className = "btn btn-success"
@@ -63,6 +69,8 @@ class AddGoal extends Component {
     )
   }
 }
+
+
 function mapStateToProps(state) {
   const {user } = state;
   return {

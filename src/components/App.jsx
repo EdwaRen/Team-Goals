@@ -95,7 +95,7 @@ class App extends Component {
               <h4>Goals</h4>
               <GoalList/>
             <hr/>
-            <h4>Complete Goals</h4>
+            <h4>All Completed Goals</h4>
             <CompleteGoalList/>
             <hr/>
             <button className="btn btn-danger" onClick={() => this.signOut()}>

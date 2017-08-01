@@ -2,7 +2,7 @@ import React, { Component, PropTypes} from 'react';
 import { connect} from 'react-redux';
 import { setCompleted} from '../actions';
 import { completeGoalRef} from '../firebase';
-// import moment from 'moment';
+import moment from 'moment';
 import * as firebase from 'firebase';
 // import ReactMixin from 'react-mixin';
 // import ReactFireMixin from 'reactfire';
@@ -35,8 +35,6 @@ class CompleteGoalList extends Component {
     // completeGoal.endAt().limit(100).on('value', update);
 
     // console.log('this.props', this.props.completeGoals);
-    // var myDate = moment(new Date()).utcOffset(-240).format('YYYY-MM-DD HH:mm');
-
 
 
     return (
@@ -44,20 +42,22 @@ class CompleteGoalList extends Component {
         {
           this.props.completeGoals.map((completeGoal, index) => {
             const {title, email, date} = completeGoal;
+            var myDate = moment(new Date(-date)).utcOffset(-240).format('MM-DD-YYYY');
+
             return (
               <div key = {index}>
-                <strong>{title}</strong> completed by <em>{email }</em> on <em>{ date }</em>
+                <strong>{title}</strong> | completed by <em>{email }</em> on <em>{ myDate }</em>
               </div>
             )
           })
         }
-        <button
+        {/* <button
           className = "btn btn-primary"
           onClick = {() => this.clearCompleted()}
           >
             Clear All
 
-        </button>
+        </button> */}
       </div>
     )
   }
