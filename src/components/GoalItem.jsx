@@ -1,6 +1,8 @@
 import React, { Component} from 'react';
 import { connect} from 'react-redux';
 import { completeGoalRef, goalRef} from '../firebase';
+import moment from 'moment';
+
 
 class GoalItem extends Component {
 
@@ -9,9 +11,11 @@ class GoalItem extends Component {
     //Remove this goal from database
     const {email } = this.props.user;
     const {title , serverKey} = this.props.goal;
+    const{ date}  = this.props.goal;
+
     console.log('server', serverKey);
     goalRef.child(serverKey).remove();
-    completeGoalRef.push({email, title});
+    completeGoalRef.push({email, title, date});
   }
 
   render() {
