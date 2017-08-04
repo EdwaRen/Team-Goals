@@ -27,9 +27,49 @@ class SignUp extends Component {
 
 
   render() {
+
+    const mainDivStyle = {
+      width: '800px',
+      // height: '600px',
+      backgroundColor: 'white',
+      opacity: "0.9",
+
+      // position: 'absolute',
+      /*it can be fixed too*/
+      left: '0',
+      right: '0',
+      top: '0',
+      bottom: '0',
+      margin: 'auto',
+
+      /*this to solve "the content will not be cut when the window is smaller than the content": */
+      maxWidth: '100%',
+      paddingBottom: "30px",
+      // maxHeight:'100%',
+      // overflow: 'auto'
+    }
+    const backgroundStyle = {}
+    const goalDarken = {
+      textAlign:"center",
+      paddingTop: "-15px",
+      paddingBottom: "-15px",
+      backgroundColor: "#444444",
+      // color: "#EEEEEE"
+    }
+
     return (
-      <div className = "form-inline" style = {{margin: '5%'}}>
-        <h2>Sign Up</h2>
+      <div className = "form-inline" >
+        <div style={goalDarken}>
+          <h3 style={{
+            fontSize: "30px",
+            opacity: "0.0"
+          }}>
+            s</h3>
+        <h2 style ={{
+          textAlign: "center",
+          fontSize: "44px",
+          color: "#FFFFFF"
+        }}>Sign Up</h2>
         <div className = "form-group">
           <input
             className = "form-control"
@@ -55,8 +95,22 @@ class SignUp extends Component {
 
         </div>
         <div style= {{padding: '5px'}}>{this.state.error.message}</div>
-        <div style= {{padding: '5px'}}><Link to="signin">Already registered? Sign in instead</Link></div>
+        <button className="btn btn-primary"  type="button">
+          <Link to={'/signin'} style={{color:"#FFFFFF"}}>Sign Up Instead</Link>
+        </button>
 
+        <h3 style={{
+          fontSize: "0px",
+          opacity: "0.0"
+        }}>
+          s</h3>
+
+
+        <div style = {{
+          backgroundColor:"#000000",
+          height:"10px"
+        }}></div>
+      </div>
       </div>
     )
   }

@@ -34,29 +34,10 @@ class App extends Component {
       // maxHeight:'100%',
       // overflow: 'auto'
     }
-    const backgroundStyle = {
-
-      // position: "fixed",
-      // top: "-50%",
-      // left: "-50%",
-      // width: "200%",
-      // height: "200%",
-      // backgroundImage: "url(" + Background + ")",
-      // // zoom: "0.5",
-      // // margin: "0",
-      // // minWidth: "100%",
-      // // minHeight: "100%",
-      // // // backgroundpPosition: "center",
-      // // // backgroundRepeat: "no-repeat",
-      // // backgroundSize: "100% auto",
-      // // backgroundColor: "blue",
-      //
-      // // backgroundSize: "100% 100%",
-      // backgroundAttachment: "fixed",
-    }
+    const backgroundStyle = {}
     const goalDarken = {
       paddingTop: "-15px",
-      paddingBottom:"-15px",
+      paddingBottom: "-15px",
       backgroundColor: "#444444",
       color: "#EEEEEE"
     }
@@ -68,32 +49,41 @@ class App extends Component {
         margin: "0",
         padding: "0"
       }}>
+        <title>Team Goals</title>
         <div>
           {/* <div style={backgroundStyle}>
             <img src="../images/wallpaper.jpg" alt="" style={imgStyle}></img>
           </div> */}
           <div style={goalDarken}>
-            <h3 style = {{opacity:"0.0"}}> s</h3>
-          <h3 style={{
-            textAlign: "center",
-            fontSize: "44px",
-            color: "#EEEEEE"
-          }}>Team Goals</h3>
+            <h3 style={{
+              opacity: "0.0"
+            }}>
+              s</h3>
+            <h3 style={{
+              textAlign: "center",
+              fontSize: "44px",
+              color: "#EEEEEE"
+            }}>Team Goals</h3>
 
-          <AddGoal/>
-          <h4 style={{
-            textAlign: "center",
-            fontSize: "10px"
-          }}>"One day or day one. Be productive you lazy degenerate"</h4>
-          <h3 style = {{color:"#444444", backgroundColor:"#000000", fontSize:"10px"}}> s</h3>
+            <AddGoal/>
+            <h4 style={{
+              textAlign: "center",
+              fontSize: "10px"
+            }}>"One day or day one. Be productive you lazy degenerate"</h4>
+            <h3 style={{
+              color: "#444444",
+              backgroundColor: "#000000",
+              fontSize: "10px"
+            }}>
+              s</h3>
 
-        </div>
+          </div>
 
           <div style={mainDivStyle}>
 
             <hr/>
-              <h4>Goals</h4>
-              <GoalList/>
+            <h4>Goals</h4>
+            <GoalList/>
             <hr/>
             <h4>All Completed Goals</h4>
             <CompleteGoalList/>
