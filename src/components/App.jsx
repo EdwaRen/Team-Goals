@@ -5,6 +5,8 @@ import AddGoal from './AddGoal';
 import GoalList from './GoalList';
 import CompleteGoalList from "./CompleteGoalList";
 import Background from '../images/wallpaper.png';
+import {Link} from 'react-router';
+
 
 class App extends Component {
 
@@ -90,7 +92,17 @@ class App extends Component {
             <hr/>
             <button className="btn btn-danger" onClick={() => this.signOut()}>
               Sign Out
+            </button>
+          </div>
+          <div style={{textAlign:"center", paddingBottom:"15px"}}>
 
+            <hr/>
+            <h3 style = {{textAlign:"center", marginTop:"45px"}}>Follow us on <a href = "https://github.com/EdwaRen">GitHub</a></h3>
+            <button className="btn btn-link"  type="button" style={{textAlign:"center"}}  >
+              <Link to={'/privacy'} >Privacy Policy</Link>
+            </button>
+            <button className="btn btn-link"  type="button" style={{textAlign:"center"}} >
+              <Link to={'/terms'} >Terms Of Use</Link>
             </button>
 
           </div>
