@@ -96,7 +96,7 @@ class SignUp extends Component {
         </div>
         <div style= {{padding: '5px'}}>{this.state.error.message}</div>
         <button className="btn btn-primary"  type="button">
-          <Link to={'/signin'} style={{color:"#FFFFFF"}}>Sign Up Instead</Link>
+          <Link to={'/signin'} style={{color:"#FFFFFF"}}>Sign In Instead</Link>
         </button>
 
         <h3 style={{
@@ -110,6 +110,17 @@ class SignUp extends Component {
           backgroundColor:"#000000",
           height:"10px"
         }}></div>
+      </div>
+
+      <div style = {mainDivStyle}>
+        <h3 style = {{textAlign:"center", marginTop:"45px"}}>Follow us on <a href = "https://github.com/EdwaRen">GitHub</a></h3>
+        <button className="btn btn-link"  type="button">
+          <Link to={'/privacy'} >Privacy Policy</Link>
+        </button>
+        <button className="btn btn-link"  type="button">
+          <Link to={'/terms'} >Terms Of Use</Link>
+        </button>
+
       </div>
       </div>
     )

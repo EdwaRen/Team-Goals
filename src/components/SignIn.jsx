@@ -85,9 +85,9 @@ class SignIn extends Component {
               <input className="form-control" type="password" placeholder="password" style={{
                 marginRight: '5px'
               }} onChange= {event => this.setState({ password: event.target.value})}/>
-              <button className="btn btn-primary" type="button" onClick={() => this.signIn()} //Prints the signup function above
+              <button className="btn btn-success" type="button" onClick={() => this.signIn()} //Prints the signup function above
               >
-                Sign In .. or else
+                Sign In
               </button>
 
             </div>
@@ -100,10 +100,12 @@ class SignIn extends Component {
             </button>
 
             <h3 style={{
-              fontSize: "0px",
-              opacity: "0.0"
+              marginTop:"5px",
+              fontSize: "10px",
+              color:"#FFFFFF",
+              // opacity: "0.0"
             }}>
-              s</h3>
+              "Let's Do This!"</h3>
 
 
             <div style = {{
@@ -111,6 +113,15 @@ class SignIn extends Component {
               height:"10px"
             }}></div>
 
+          </div>
+          <div style = {mainDivStyle}>
+            <h3 style = {{textAlign:"center", marginTop:"45px"}}>Follow us on <a href = "https://github.com/EdwaRen">GitHub</a></h3>
+            <button className="btn btn-link"  type="button">
+              <Link to={'/privacy'} >Privacy Policy</Link>
+            </button>
+            <button className="btn btn-link"  type="button">
+              <Link to={'/terms'} >Terms Of Use</Link>
+            </button>
           </div>
           {/* <h3 style={{
             backgroundColor: "#000000",

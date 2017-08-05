@@ -11,6 +11,8 @@ import reducer from './reducers';
 import App from './components/App';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
+import Privacy from './components/Privacy';
+import Terms from './components/Terms';
 
 const store = createStore(reducer);
 
@@ -34,6 +36,10 @@ ReactDOM.render(
       <Route path = "/app" component = {App} />
       <Route path = "/signin" component = {SignIn} />
       <Route path = "/signup" component = {SignUp} />
+      <Route path = "/privacy" component = {Privacy} />
+      <Route path = "/terms" component = {Terms} />
+
+
 
 
     </Router>
