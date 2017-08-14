@@ -1,5 +1,8 @@
+![Description Bar](/images/longBar.png?raw=true "")
 # Team Goals
-React program to organize goals with a select focus on competition between users to incentivize productivity. Team Goals uses Firebase to keep track of goals wherever you are as well as connect with others.
+
+Team Goals is a React program to organize goals with a select focus on competition between users to incentivize productivity. Firebase is ingrained to keep track of goals wherever you are as well as connect with others.
+
 
 # Links
 
@@ -27,6 +30,8 @@ $ npm start
 Finally go to localhost:3000 on your favorite browser to access Team Goals. Make sure to sign up with a simple email/password when prompted. Although emails are part of the communal goal system, passwords are securely hashed through Firebase's services.
 
 # Features
+
+![Display](/images/teamGoals.png?raw=true "")
 
 ## Adding Goals
 

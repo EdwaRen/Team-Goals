@@ -73,7 +73,7 @@ class App extends Component {
               fontSize: "10px"
             }}>"One day or day one. Be productive you lazy degenerate"</h4>
             <h3 style={{
-              color: "#444444",
+              color: "#000000",
               backgroundColor: "#000000",
               fontSize: "10px"
             }}>
