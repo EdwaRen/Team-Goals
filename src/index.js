@@ -33,17 +33,17 @@ firebaseApp.auth().onAuthStateChanged(user => {
 ReactDOM.render(
   <Provider store = {store}>
     <Router path = "/" history = {browserHistory}>
-      <Route path = "/app" component = {App} />
-      <Route path = "/signin" component = {SignIn} />
-      <Route path = "/signup" component = {SignUp} />
-      <Route path = "/privacy" component = {Privacy} />
-      <Route path = "/terms" component = {Terms} />
+    <Route path = "/app" component = {App} />
+    <Route path = "/signin" component = {SignIn} />
+    <Route path = "/signup" component = {SignUp} />
+    <Route path = "/privacy" component = {Privacy} />
+    <Route path = "/terms" component = {Terms} />
 
 
 
 
-    </Router>
-  </Provider>, document.getElementById('root')
+  </Router>
+</Provider>, document.getElementById('root')
 
 
 

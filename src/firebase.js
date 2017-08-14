@@ -9,10 +9,7 @@ const config = // Initialize Firebase
     storageBucket: "teamgoals-57389.appspot.com",
     messagingSenderId: "673824030035"
   };
-// firebase.initializeApp(config);
 
 export const firebaseApp = firebase.initializeApp(config);
 export const goalRef = firebase.database().ref('goals');
 export const completeGoalRef = firebase.database().ref('completeGoals');
-
-  // firebase.initializeApp(config);
