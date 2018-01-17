@@ -1,10 +1,13 @@
 {
+  "homepage": "https://EdwaRen.github.io/Team_Goals",
   "name": "teamgoals",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "cross-spawn": "^5.1.0",
     "firebase": "^4.2.0",
+    "gh-pages": "^1.1.0",
+    "moment": "^2.20.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
@@ -16,6 +19,8 @@
     "react-scripts": "1.0.10"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
