@@ -71,7 +71,7 @@ class App extends Component {
             <h4 style={{
               textAlign: "center",
               fontSize: "10px"
-            }}>"One day or day one. Be productive you lazy degenerate"</h4>
+            }}>"If life shuts a door, open it again. It's a door, thats how they work"</h4>
             <h3 style={{
               color: "#000000",
               backgroundColor: "#000000",

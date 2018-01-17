@@ -92,7 +92,8 @@ class SignIn extends Component {
 
             </div>
             <div style={{
-              padding: '5px'
+              padding: '5px',
+              color: "#CCC"
             }}>{this.state.error.message}</div>
 
             <button className="btn btn-primary"  type="button">

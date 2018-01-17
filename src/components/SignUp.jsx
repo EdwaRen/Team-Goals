@@ -112,7 +112,7 @@ class SignUp extends Component {
         }}></div>
       </div>
 
-      <div style = {mainDivStyle}>
+      <div style = {mainDivStyle} style = {{textAlign:'center'}}>
         <h3 style = {{textAlign:"center", marginTop:"45px"}}>Follow us on <a href = "https://github.com/EdwaRen">GitHub</a></h3>
         <button className="btn btn-link"  type="button">
           <Link to={'/privacy'} >Privacy Policy</Link>
@@ -122,6 +122,15 @@ class SignUp extends Component {
         </button>
 
       </div>
+      {/* <div style = {mainDivStyle}>
+        <h3 style = {{textAlign:"center", marginTop:"45px"}}>Follow us on <a href = "https://github.com/EdwaRen">GitHub</a></h3>
+        <button className="btn btn-link"  type="button">
+          <Link to={'/privacy'} >Privacy Policy</Link>
+        </button>
+        <button className="btn btn-link"  type="button">
+          <Link to={'/terms'} >Terms Of Use</Link>
+        </button>
+      </div> */}
       </div>
     )
   }
