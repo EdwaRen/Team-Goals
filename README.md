@@ -3,6 +3,10 @@
 
 Team Goals is a React program to organize goals with a select focus on competition between users to incentivize productivity. Firebase is ingrained to keep track of goals wherever you are as well as connect with others.
 
+Team Goals is available online at [teamgoals.ml](http://teamgoals.ml/).
+<br \>
+Note: All goals set into Team Goals are public.
+
 
 # Links
 
