@@ -26,22 +26,27 @@ class SignIn extends Component {
   render() {
 
     const mainDivStyle = {
-      width: '800px',
+      // width: '800px',
       // height: '600px',
       backgroundColor: 'white',
       opacity: "0.9",
+      textAlign: "center",
+      // verticalAlign: "middle",
+      position:'fixed',
 
       // position: 'absolute',
       /*it can be fixed too*/
-      left: '0',
-      right: '0',
-      top: '0',
-      bottom: '0',
+      // left: '0',
+      // // right: '0',
+      // top: '50%',
+      bottom: '0px',
       margin: 'auto',
+      width: "100%",
 
       /*this to solve "the content will not be cut when the window is smaller than the content": */
-      maxWidth: '100%',
-      paddingBottom: "30px",
+      // maxWidth: '100%',
+      padding: "0",
+      paddingBottom:"30px"
       // maxHeight:'100%',
       // overflow: 'auto'
     }
@@ -54,30 +59,21 @@ class SignIn extends Component {
     }
 
     return (
-      <div style ={{
-        textAlign: "center",
-        width: "100%",
-        height: "100%",
-        margin: "0",
-        padding: "0"
-      }}>
+      <div style ={{ textAlign: "center", width: "100%", height: "100%", margin: "0", padding: "0" }} >
         <div className="form-inline" style ={{
           // backgroundColor: "#444444"
         }}>
-          <div style={goalDarken}>
-            <h3 style={{
-              fontSize: "30px",
-              opacity: "0.0"
-            }}>
-              s</h3>
+        <div style={goalDarken}>
+          <h3 style={{   fontSize: "30px",   opacity: "0.0"   }}>
+          s</h3>
 
-            <h2 style ={{
-              textAlign: "center",
-              fontSize: "44px",
-              color: "#FFFFFF"
-            }}>Sign In</h2>
-            {/* </div>
-          <div id ={mainDivStyle}> */}
+          <h2 style ={{
+            textAlign: "center",
+            fontSize: "44px",
+            color: "#FFFFFF"
+          }}>Sign In</h2>
+          {/* </div>
+            <div id ={mainDivStyle}> */}
             <div className="form-group">
               <input className="form-control" type="text" placeholder="email" style={{
                 marginRight: '5px'
@@ -106,15 +102,19 @@ class SignIn extends Component {
               color:"#FFFFFF",
               // opacity: "0.0"
             }}>
-              "Let's Do This!"</h3>
+            We Got This</h3>
 
-
+            <div style = {{
+              backgroundColor:"#44",
+              height:"30px"
+            }}></div>
             <div style = {{
               backgroundColor:"#000000",
               height:"10px"
             }}></div>
 
           </div>
+          {/* <div style = {{backgroundColor:"#FFF", height: "50px"}}></div> */}
           <div style = {mainDivStyle}>
             <h3 style = {{textAlign:"center", marginTop:"45px"}}>Follow us on <a href = "https://github.com/EdwaRen">GitHub</a></h3>
             <button className="btn btn-link"  type="button">
@@ -129,7 +129,7 @@ class SignIn extends Component {
             fontSize: "5px",
             opacity: "0.0"
           }}>
-            s</h3> */}
+          s</h3> */}
 
         </div>
       </div>

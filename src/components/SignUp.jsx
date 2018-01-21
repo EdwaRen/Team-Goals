@@ -29,24 +29,25 @@ class SignUp extends Component {
   render() {
 
     const mainDivStyle = {
-      width: '800px',
-      // height: '600px',
       backgroundColor: 'white',
       opacity: "0.9",
+      textAlign: "center",
+      // verticalAlign: "middle",
+      position:'fixed',
 
       // position: 'absolute',
       /*it can be fixed too*/
-      left: '0',
-      right: '0',
-      top: '0',
-      bottom: '0',
+      // left: '0',
+      // // right: '0',
+      // top: '50%',
+      bottom: '0px',
       margin: 'auto',
+      width: "100%",
 
       /*this to solve "the content will not be cut when the window is smaller than the content": */
-      maxWidth: '100%',
-      paddingBottom: "30px",
-      // maxHeight:'100%',
-      // overflow: 'auto'
+      // maxWidth: '100%',
+      padding: "0",
+      paddingBottom:"30px"
     }
     const backgroundStyle = {}
     const goalDarken = {
@@ -112,7 +113,7 @@ class SignUp extends Component {
         }}></div>
       </div>
 
-      <div style = {mainDivStyle} style = {{textAlign:'center'}}>
+      <div style = {mainDivStyle} >
         <h3 style = {{textAlign:"center", marginTop:"45px"}}>Follow us on <a href = "https://github.com/EdwaRen">GitHub</a></h3>
         <button className="btn btn-link"  type="button">
           <Link to={'/privacy'} >Privacy Policy</Link>
